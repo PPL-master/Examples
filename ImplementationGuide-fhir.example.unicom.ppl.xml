@@ -11,7 +11,7 @@
   <name value="IDMP_IG"/>
   <title value="PPL Examples"/>
   <status value="draft"/>
-  <date value="2021-11-18T13:28:33+00:00"/>
+  <date value="2021-11-18T20:18:37+00:00"/>
   <publisher value="Unicom Project"/>
   <contact>
     <name value="Unicom Project"/>
@@ -25,6 +25,25 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="4.6.0"/>
   <definition>
+    <grouping id="GroupA">
+      <name value="Betaklav"/>
+      <description value="Estaonian example. A bundle containing all the Betaklav resources."/>
+    </grouping>
+    <grouping id="GroupB">
+      <name value="Cefuroxime"/>
+      <description value="Cefuroxime as specified in Estonia"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79"/>
+      </reference>
+      <name value="10e18b90-c5ff-4921-acae-db0a9f85cc79"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="GroupA"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicinalProductDefinition"/>
@@ -34,6 +53,7 @@
       </reference>
       <name value="CefuroximeMIP1500MG-EE"/>
       <exampleBoolean value="true"/>
+      <groupingId value="GroupB"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -44,6 +64,7 @@
       </reference>
       <name value="CefuroximeMIP1500MG-EE-ManItem001"/>
       <exampleBoolean value="true"/>
+      <groupingId value="GroupB"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -54,6 +75,7 @@
       </reference>
       <name value="CefuroximeMIP1500MG-EE-MarketingAuthorisation"/>
       <exampleBoolean value="true"/>
+      <groupingId value="GroupB"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -65,6 +87,7 @@
       <name value="CefuroximeMIP1500MG-EE-Package001"/>
       <description value="II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal"/>
       <exampleBoolean value="true"/>
+      <groupingId value="GroupB"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -75,6 +98,7 @@
       </reference>
       <name value="cefuroxime-1500mg-Ingredient"/>
       <exampleBoolean value="true"/>
+      <groupingId value="GroupB"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -85,6 +109,7 @@
       </reference>
       <name value="cefuroxime-1500mg-solution-vial"/>
       <exampleBoolean value="true"/>
+      <groupingId value="GroupB"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -10,7 +10,7 @@
   "name": "IDMP_IG",
   "title": "PPL Examples",
   "status": "draft",
-  "date": "2021-11-18T13:28:33+00:00",
+  "date": "2021-11-18T20:18:37+00:00",
   "publisher": "Unicom Project",
   "contact": [
     {
@@ -30,7 +30,33 @@
     "4.6.0"
   ],
   "definition": {
+    "grouping": [
+      {
+        "id": "GroupA",
+        "name": "Betaklav",
+        "description": "Estaonian example. A bundle containing all the Betaklav resources."
+      },
+      {
+        "id": "GroupB",
+        "name": "Cefuroxime",
+        "description": "Cefuroxime as specified in Estonia"
+      }
+    ],
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79"
+        },
+        "name": "10e18b90-c5ff-4921-acae-db0a9f85cc79",
+        "exampleBoolean": true,
+        "groupingId": "GroupA"
+      },
       {
         "extension": [
           {
@@ -42,7 +68,8 @@
           "reference": "MedicinalProductDefinition/CefuroximeMIP1500MG-EE"
         },
         "name": "CefuroximeMIP1500MG-EE",
-        "exampleBoolean": true
+        "exampleBoolean": true,
+        "groupingId": "GroupB"
       },
       {
         "extension": [
@@ -55,7 +82,8 @@
           "reference": "ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001"
         },
         "name": "CefuroximeMIP1500MG-EE-ManItem001",
-        "exampleBoolean": true
+        "exampleBoolean": true,
+        "groupingId": "GroupB"
       },
       {
         "extension": [
@@ -68,7 +96,8 @@
           "reference": "RegulatedAuthorization/CefuroximeMIP1500MG-EE-MarketingAuthorisation"
         },
         "name": "CefuroximeMIP1500MG-EE-MarketingAuthorisation",
-        "exampleBoolean": true
+        "exampleBoolean": true,
+        "groupingId": "GroupB"
       },
       {
         "extension": [
@@ -82,7 +111,8 @@
         },
         "name": "CefuroximeMIP1500MG-EE-Package001",
         "description": "II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal",
-        "exampleBoolean": true
+        "exampleBoolean": true,
+        "groupingId": "GroupB"
       },
       {
         "extension": [
@@ -95,7 +125,8 @@
           "reference": "Ingredient/cefuroxime-1500mg-Ingredient"
         },
         "name": "cefuroxime-1500mg-Ingredient",
-        "exampleBoolean": true
+        "exampleBoolean": true,
+        "groupingId": "GroupB"
       },
       {
         "extension": [
@@ -108,7 +139,8 @@
           "reference": "AdministrableProductDefinition/cefuroxime-1500mg-solution-vial"
         },
         "name": "cefuroxime-1500mg-solution-vial",
-        "exampleBoolean": true
+        "exampleBoolean": true,
+        "groupingId": "GroupB"
       }
     ],
     "page": {

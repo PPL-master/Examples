@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 3, warn = 5, info = 27 -->
+<!-- broken links = 1, errors = 13, warn = 6, info = 86 -->
 <head>
   <title>IDMP_IG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IDMP_IG</h1>
- <p>Generated Thu Nov 18 13:28:54 GMT 2021, FHIR version 4.6.0 for fhir.example.unicom.ppl#0.1.0 (canonical = <a href="http://example.org/unicom/ppl">http://example.org/unicom/ppl</a> (<a href="http://example.org/unicom/ppl/history.html">history</a>)). See <a href="c:\filing\unicom\fsh\output\qa.min.html">Errors Only</a></p>
+ <p>Generated Thu Nov 18 20:18:55 GMT 2021, FHIR version 4.6.0 for fhir.example.unicom.ppl#0.1.0 (canonical = <a href="http://example.org/unicom/ppl">http://example.org/unicom/ppl</a> (<a href="http://example.org/unicom/ppl/history.html">history</a>)). See <a href="c:\filing\unicom\fsh\output\qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.81, which is out of date. The current version is v1.1.86 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.81, which is out of date. The current version is v1.1.87 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.example.unicom.ppl, Canonical = http://example.org/unicom/ppl</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.0 = ok. Step <code>ballot</code> in sequence <code>STU 1</code>, to be published at http://example.org/fhir/STU1 (subdir = ??). This IG does not appear to have been published yet. <span stlye="color: marron; font-weight: bold">package-list.json path for this version does not start with the canonical URL (http://example.org/fhir/STU1 vs http://example.org/unicom/ppl)</span></td></tr>
@@ -50,20 +50,23 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.org/unicom/ppl (Problem #1 with package-list.json at http://example.org/unicom/ppl: http://example.org/unicom/ppl/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 1, errors = 3, warn = 5, info = 27</td></tr>
+ <tr><td>Summary:</td><td> broken links = 1, errors = 13, warn = 6, info = 86</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>6</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#C__Filing_Unicom_FSH_fsh-generated_resources_ImplementationGuide-fhir.example.unicom.ppl"><b>C:\Filing\Unicom\FSH\fsh-generated\resources\ImplementationGuide-fhir.example.unicom.ppl</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Filing_Unicom_FSH_fsh-generated_resources_administrableproductdefinition-cefuroxime-1500mg-solution-vial"><b>C:\Filing\Unicom\FSH\fsh-generated\resources\administrableproductdefinition-cefuroxime-1500mg-solution-vial</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Filing_Unicom_FSH_fsh-generated_resources_bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79"><b>C:\Filing\Unicom\FSH\fsh-generated\resources\bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79</b></a></td><td><b>10</b></td><td><b>0</b></td><td><b>59</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Filing_Unicom_FSH_fsh-generated_resources_ingredient-cefuroxime-1500mg-Ingredient"><b>C:\Filing\Unicom\FSH\fsh-generated\resources\ingredient-cefuroxime-1500mg-Ingredient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>5</b></td>
@@ -86,6 +89,9 @@
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicinalProductDefinition/CefuroximeMIP1500MG-EE.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
@@ -140,9 +146,226 @@
    </tr>
 </table>
 <hr/>
+<a name="C__Filing_Unicom_FSH_fsh-generated_resources_bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79"> </a>
+<h2><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(10)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medicinalproductdefinition.html">MedicinalProductDefinition</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/regulatedauthorization.html">RegulatedAuthorization</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/packagedproductdefinition.html">PackagedProductDefinition</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/packagedproductdefinition.html">PackagedProductDefinition</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/packagedproductdefinition.html">PackagedProductDefinition</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/manufactureditemdefinition.html">ManufacturedItemDefinition</a></li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/ingredient.html">Ingredient</a></li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/ingredient.html">Ingredient</a></li><li>Bundle.entry[8].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/administrableproductdefinition.html">AdministrableProductDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).language (l15/c26)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('EN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).extension[0] (l17/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://ema.europa.eu/fhir/extension/authorisedDoseForm is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).extension[0].value.ofType(Coding) (l20/c38)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).domain.coding[0] (l38/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).legalStatusOfSupply.coding[0] (l47/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072051' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).additionalMonitoringIndicator.coding[0] (l56/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ema.europa.eu/fhir/additionalMonitoringIndicator' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).classification[0].coding[0] (l66/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000093533' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].namePart[0].type.coding[0] (l82/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].namePart[1].type.coding[0] (l94/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].namePart[2].type.coding[0] (l106/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0] (l119/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].language.coding[0] (l128/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072057' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[0].package (l143/c14)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:962569ce-d8fb-4b4e-bd60-5c23f1923925 matching against Profile http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition</b> <span id="sl24" class="flip" onclick="flip('l24')">Show Reasoning</span><div id="l24" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</li>, <li>Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[1].package (l148/c14)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:c6a838d9-27ca-49a4-a6ba-216448f82013 matching against Profile http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition</b> <span id="sl25" class="flip" onclick="flip('l25')">Show Reasoning</span><div id="l25" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</li>, <li>Bundle.entry[3].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[2].package (l153/c14)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:2b3ae935-234a-46a7-8791-4e5b0867be2b matching against Profile http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition</b> <span id="sl26" class="flip" onclick="flip('l26')">Show Reasoning</span><div id="l26" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[4].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</li>, <li>Bundle.entry[4].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(RegulatedAuthorization).type.coding[0] (l178/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000060' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(RegulatedAuthorization).region[0].coding[0] (l188/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(RegulatedAuthorization).status.coding[0] (l198/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072049' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).language (l223/c26)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('EE') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity'] (l225/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Version_InvalidId"><b>Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0] (l225/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.type.coding[0] (l251/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.material[0].coding[0] (l262/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.package[0].type.coding[0] (l274/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.package[0].material[0].coding[0] (l285/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.package[0].material[1].coding[0] (l294/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).language (l330/c26)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('EE') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity'] (l332/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Version_InvalidId"><b>Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).extension[0] (l332/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).package.type.coding[0] (l358/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).package.material[0].coding[0] (l369/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).package.package[0].type.coding[0] (l381/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).package.package[0].material[0].coding[0] (l391/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(PackagedProductDefinition).package.package[0].material[1].coding[0] (l400/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).language (l436/c26)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('EE') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity'] (l438/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Version_InvalidId"><b>Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).extension[0] (l438/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).package.type.coding[0] (l464/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).package.material[0].coding[0] (l475/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).package.package[0].type.coding[0] (l487/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).package.package[0].material[0].coding[0] (l498/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).package.package[0].material[1].coding[0] (l507/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).package.package[0].material[2].coding[0] (l516/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(PackagedProductDefinition).package.package[0].material[3].coding[0] (l525/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[5].resource.ofType(ManufacturedItemDefinition).extension[0] (l562/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[5].resource.ofType(ManufacturedItemDefinition).manufacturedDoseForm.coding[0] (l571/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[5].resource.ofType(ManufacturedItemDefinition).unitOfPresentation.coding[0] (l580/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).extension[0] (l611/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).role.coding[0] (l620/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).substance.code.concept.coding[0] (l631/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).numerator (l643/c36)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).denominator (l649/c30)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].substance.concept.coding[0] (l660/c26)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).numerator (l670/c36)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).denominator (l676/c34)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).extension[0] (l699/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).role.coding[0] (l708/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).substance.code.concept.coding[0] (l719/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).numerator (l731/c36)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).denominator (l737/c30)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].substance.concept.coding[0] (l748/c26)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).numerator (l758/c36)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).denominator (l764/c34)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[8].resource.ofType(AdministrableProductDefinition).subject[0] (l787/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:24b28936-00b1-44c3-bbc4-fe1f5e2082fd matching against Profile http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition</b> <span id="sl75" class="flip" onclick="flip('l75')">Show Reasoning</span><div id="l75" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).extension[0]: The extension http://ema.europa.eu/fhir/extension/authorisedDoseForm is unknown, and not allowed here</li>, <li>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[0].package: <ul><li>Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</li>, <li>Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</li></ul></li>, <li>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[1].package: <ul><li>Bundle.entry[3].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</li>, <li>Bundle.entry[3].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</li></ul></li>, <li>Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[2].package: <ul><li>Bundle.entry[4].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</li>, <li>Bundle.entry[4].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[8].resource.ofType(AdministrableProductDefinition).administrableDoseForm.coding[0] (l793/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[8].resource.ofType(AdministrableProductDefinition).unitOfPresentation.coding[0] (l802/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[8].resource.ofType(AdministrableProductDefinition).ingredient[0] (l810/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:70394f07-02cb-4f04-8b2e-b6ac725da813 matching against Profile http://hl7.org/fhir/StructureDefinition/Ingredient</b> <span id="sl78" class="flip" onclick="flip('l78')">Show Reasoning</span><div id="l78" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[6].resource.ofType(Ingredient).extension[0]: The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[8].resource.ofType(AdministrableProductDefinition).ingredient[1] (l813/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:97f73ce4-094b-45eb-bec9-e4ab3ff338a8 matching against Profile http://hl7.org/fhir/StructureDefinition/Ingredient</b> <span id="sl79" class="flip" onclick="flip('l79')">Show Reasoning</span><div id="l79" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[7].resource.ofType(Ingredient).extension[0]: The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[8].resource.ofType(AdministrableProductDefinition).routeOfAdministration[0].code.coding[0] (l821/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="C__Filing_Unicom_FSH_fsh-generated_resources_ingredient-cefuroxime-1500mg-Ingredient"> </a>
-<h2><a href="Ingredient-cefuroxime-1500mg-Ingredient.html">fsh-generated\resources\Ingredient-cefuroxime-1500mg-Ingredient.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Ingredient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/ingredient.html">Ingredient</a></li></ul>
+<h2><a href="Ingredient-cefuroxime-1500mg-Ingredient.html">fsh-generated\resources\Ingredient-cefuroxime-1500mg-Ingredient.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Ingredient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/ingredient.html">Ingredient</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -166,8 +389,8 @@
 </table>
 <hr/>
 <a name="C__Filing_Unicom_FSH_fsh-generated_resources_manufactureditemdefinition-CefuroximeMIP1500MG-EE-ManItem001"> </a>
-<h2><a href="ManufacturedItemDefinition-CefuroximeMIP1500MG-EE-ManItem001.html">fsh-generated\resources\ManufacturedItemDefinition-CefuroximeMIP1500MG-EE-ManItem001.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ManufacturedItemDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/manufactureditemdefinition.html">ManufacturedItemDefinition</a></li></ul>
+<h2><a href="ManufacturedItemDefinition-CefuroximeMIP1500MG-EE-ManItem001.html">fsh-generated\resources\ManufacturedItemDefinition-CefuroximeMIP1500MG-EE-ManItem001.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ManufacturedItemDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/manufactureditemdefinition.html">ManufacturedItemDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -182,8 +405,8 @@
 </table>
 <hr/>
 <a name="C__Filing_Unicom_FSH_fsh-generated_resources_medicinalproductdefinition-CefuroximeMIP1500MG-EE"> </a>
-<h2><a href="MedicinalProductDefinition-CefuroximeMIP1500MG-EE.html">fsh-generated\resources\MedicinalProductDefinition-CefuroximeMIP1500MG-EE.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>MedicinalProductDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medicinalproductdefinition.html">MedicinalProductDefinition</a></li></ul>
+<h2><a href="MedicinalProductDefinition-CefuroximeMIP1500MG-EE.html">fsh-generated\resources\MedicinalProductDefinition-CefuroximeMIP1500MG-EE.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>MedicinalProductDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medicinalproductdefinition.html">MedicinalProductDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -225,8 +448,8 @@
 </table>
 <hr/>
 <a name="C__Filing_Unicom_FSH_fsh-generated_resources_packagedproductdefinition-CefuroximeMIP1500MG-EE-Package001"> </a>
-<h2><a href="PackagedProductDefinition-CefuroximeMIP1500MG-EE-Package001.html">fsh-generated\resources\PackagedProductDefinition-CefuroximeMIP1500MG-EE-Package001.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>PackagedProductDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/packagedproductdefinition.html">PackagedProductDefinition</a></li></ul>
+<h2><a href="PackagedProductDefinition-CefuroximeMIP1500MG-EE-Package001.html">fsh-generated\resources\PackagedProductDefinition-CefuroximeMIP1500MG-EE-Package001.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>PackagedProductDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/packagedproductdefinition.html">PackagedProductDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -247,8 +470,8 @@
 </table>
 <hr/>
 <a name="C__Filing_Unicom_FSH_fsh-generated_resources_regulatedauthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation"> </a>
-<h2><a href="RegulatedAuthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation.html">fsh-generated\resources\RegulatedAuthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>RegulatedAuthorization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/regulatedauthorization.html">RegulatedAuthorization</a></li></ul>
+<h2><a href="RegulatedAuthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation.html">fsh-generated\resources\RegulatedAuthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>RegulatedAuthorization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/regulatedauthorization.html">RegulatedAuthorization</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -273,7 +496,42 @@
 <h2>Extension_EXT_Unknown_NotHere</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The extension http://ema.europa.eu/fhir/extension/authorisedDoseForm is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
      <td><a href="MedicinalProductDefinition-CefuroximeMIP1500MG-EE.html">fsh-generated\resources\MedicinalProductDefinition-CefuroximeMIP1500MG-EE.json</a></td><td><b>The extension http://ema.europa.eu/fhir/extension/authorisedDoseForm is unknown, and not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Version_InvalidId"> </a>
+<h2>Extension_EXT_Version_InvalidId</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')</b></td>
    </tr>
 </table>
 <hr/>
@@ -293,6 +551,23 @@
    </tr>
 </table>
 <hr/>
+<a name="Terminology_TX_NoValid_18"> </a>
+<h2>Terminology_TX_NoValid_18</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The value provided ('EN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The value provided ('EE') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The value provided ('EE') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>The value provided ('EE') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7EE68 in module 'FHIRServer.exe'. Read of address 0000000000000028)</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Terminology_TX_System_NotKnown"> </a>
 <h2>Terminology_TX_System_NotKnown</h2>
  <table class="grid">
@@ -307,6 +582,153 @@
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="AdministrableProductDefinition-cefuroxime-1500mg-solution-vial.html">fsh-generated\resources\AdministrableProductDefinition-cefuroxime-1500mg-solution-vial.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072051' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/additionalMonitoringIndicator' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000093533' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072057' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000060' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072049' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.html">fsh-generated\resources\Bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Ingredient-cefuroxime-1500mg-Ingredient.html">fsh-generated\resources\Ingredient-cefuroxime-1500mg-Ingredient.json</a></td><td><b>Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated</b></td>

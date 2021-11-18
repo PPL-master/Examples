@@ -6,7 +6,14 @@
   "profiles": {},
   "usage": {
     "http://ema.europa.eu/fhir/extension/authorisedDoseForm": [
+      "Bundle.entry.resource",
       "MedicinalProductDefinition"
+    ],
+    "http://ema.europa.eu/fhir/extension/subject": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity": [
+      "Bundle.entry.resource"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
