@@ -1,0 +1,58 @@
+{
+  "resourceType": "RegulatedAuthorization",
+  "id": "CefuroximeMIP1500MG-EE-MarketingAuthorisation",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-10-08T11:19:08.114+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 805813</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-CefuroximeMIP1500MG-EE.html\">Generated Summary: id: EE-100009199-00001111, id: 12345-cefuroxime-ee; <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span>; <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal Product subject to medical prescription</span>; <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000093533 100000096183}\">cefuroxime J01DC02</span></a></p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Estonia</span></p><p><b>status</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072049 200000017708}\">Valid - Renewed/Varied</span></p><p><b>statusDate</b>: 2017-12-06</p><p><b>holder</b>: <span>Mip Pharma GmbH</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+      "value": "805813"
+    }
+  ],
+  "subject": {
+    "reference": "MedicinalProductDefinition/CefuroximeMIP1500MG-EE"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+        "code": "220000000061",
+        "display": "Marketing Authorisation"
+      }
+    ]
+  },
+  "region": [
+    {
+      "coding": [
+        {
+          "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+          "code": "100000000388",
+          "display": "Estonia"
+        }
+      ]
+    }
+  ],
+  "status": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+        "code": "200000017708",
+        "display": "Valid - Renewed/Varied"
+      }
+    ]
+  },
+  "statusDate": "2017-12-06",
+  "holder": {
+    "identifier": {
+      "system": "https://spor.ema.europa.eu/v1/locations",
+      "value": "LOC-100009199"
+    },
+    "display": "Mip Pharma GmbH"
+  }
+}

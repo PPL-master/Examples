@@ -1,0 +1,15 @@
+{
+  "package": "fhir.example.unicom.ppl",
+  "version": "0.1.0",
+  "fhirVersion": "4.6.0",
+  "extensions": [],
+  "profiles": {},
+  "usage": {
+    "http://ema.europa.eu/fhir/extension/authorisedDoseForm": [
+      "MedicinalProductDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

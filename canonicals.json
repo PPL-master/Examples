@@ -1,0 +1,9 @@
+[
+  {
+    "id": "fhir.example.unicom.ppl",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/unicom/ppl/ImplementationGuide/fhir.example.unicom.ppl",
+    "version": "0.1.0",
+    "name": "IDMP_IG"
+  }
+]

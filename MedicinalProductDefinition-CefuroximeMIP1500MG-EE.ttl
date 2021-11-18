@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/unicom/ppl/MedicinalProductDefinition/CefuroximeMIP1500MG-EE> a fhir:MedicinalProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CefuroximeMIP1500MG-EE"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "7" ];
+     fhir:Meta.lastUpdated [ fhir:value "2021-10-21T10:38:17.677+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EE-100009199-00001111, id: 12345-cefuroxime-ee</p><p><b>domain</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>legalStatusOfSupply</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal Product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000093533 100000096183}\">cefuroxime J01DC02</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber</p><blockquote><p><b>namePart</b></p><p><b>part</b>: Cefuroxime</p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 1500 mg</p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\">Strength part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: süste-/infusioonilahuse pulber</p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}\">Pharmaceutical dose form part</span></p></blockquote><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td>*</td><td><span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Estonia</span></td><td><span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072057 100000072172}\">Estonian</span></td></tr></table></blockquote><blockquote><p><b>package</b></p><p><b>package</b>: <a href=\"PackagedProductDefinition-CefuroximeMIP1500MG-EE-Package001.html\">Generated Summary: id: EE-100009199-00001111-001; description: II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal</a></p></blockquote><blockquote><p><b>package</b></p><p><b>package</b>: <a href=\"CefuroximeMIP1500MG-EE-Package002\">CefuroximeMIP1500MG-EE-Package002</a></p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/authorisedDoseForm" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000116186" ];
+       fhir:Coding.display [ fhir:value "Powder for solution for injection/infusion" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/MPID" ];
+     fhir:Identifier.value [ fhir:value "EE-100009199-00001111" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/fhir/pmsId" ];
+     fhir:Identifier.value [ fhir:value "12345-cefuroxime-ee" ]
+  ];
+  fhir:MedicinalProductDefinition.domain [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000004" ];
+       fhir:Coding.code [ fhir:value "100000000012" ];
+       fhir:Coding.display [ fhir:value "Human use" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.legalStatusOfSupply [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072051" ];
+       fhir:Coding.code [ fhir:value "100000072084" ];
+       fhir:Coding.display [ fhir:value "Medicinal Product subject to medical prescription" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.classification [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000093533" ];
+       fhir:Coding.code [ fhir:value "100000096183" ];
+       fhir:Coding.display [ fhir:value "cefuroxime J01DC02" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.name [
+     fhir:index 0;
+     fhir:MedicinalProductDefinition.name.productName [ fhir:value "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber" ];
+     fhir:MedicinalProductDefinition.name.namePart [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "Cefuroxime" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000002" ];
+           fhir:Coding.display [ fhir:value "Invented name part" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "1500 mg" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000004" ];
+           fhir:Coding.display [ fhir:value "Strength part" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "süste-/infusioonilahuse pulber" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000005" ];
+           fhir:Coding.display [ fhir:value "Pharmaceutical dose form part" ]
+         ]
+       ]
+     ];
+     fhir:MedicinalProductDefinition.name.countryLanguage [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.countryLanguage.country [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+           fhir:Coding.code [ fhir:value "100000000388" ];
+           fhir:Coding.display [ fhir:value "Estonia" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.name.countryLanguage.language [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072172" ];
+           fhir:Coding.display [ fhir:value "Estonian" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.package [
+     fhir:index 0;
+     fhir:MedicinalProductDefinition.package.package [
+       fhir:link <http://example.org/unicom/ppl/PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001>;
+       fhir:Reference.reference [ fhir:value "PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MedicinalProductDefinition.package.package [
+       fhir:Reference.reference [ fhir:value "CefuroximeMIP1500MG-EE-Package002" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/unicom/ppl/MedicinalProductDefinition/CefuroximeMIP1500MG-EE.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

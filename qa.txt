@@ -1,0 +1,59 @@
+﻿IDMP_IG : Validation Results
+=========================================
+
+err = 3, warn = 5, info = 27
+IG Publisher Version: 1.1.81 Out of date - current version is 1.1.86
+Generated Thu Nov 18 13:28:55 GMT 2021. FHIR version 4.6.0 for fhir.example.unicom.ppl#0.1.0 (canonical = http://example.org/unicom/ppl)
+ Build Errors : 1 / 5 / 0
+ C:\Filing\Unicom\FSH\fsh-generated\resources\ImplementationGuide-fhir.example.unicom.ppl : 1 / 0 / 1
+ C:\Filing\Unicom\FSH\fsh-generated\resources\administrableproductdefinition-cefuroxime-1500mg-solution-vial : 0 / 0 / 5
+ C:\Filing\Unicom\FSH\fsh-generated\resources\ingredient-cefuroxime-1500mg-Ingredient : 0 / 0 / 6
+ C:\Filing\Unicom\FSH\fsh-generated\resources\manufactureditemdefinition-CefuroximeMIP1500MG-EE-ManItem001 : 0 / 0 / 3
+ C:\Filing\Unicom\FSH\fsh-generated\resources\medicinalproductdefinition-CefuroximeMIP1500MG-EE : 2 / 0 / 10
+ C:\Filing\Unicom\FSH\fsh-generated\resources\packagedproductdefinition-CefuroximeMIP1500MG-EE-Package001 : 0 / 0 / 5
+ C:\Filing\Unicom\FSH\fsh-generated\resources\regulatedauthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation : 0 / 0 / 4
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicinalProductDefinition/CefuroximeMIP1500MG-EE.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RegulatedAuthorization/CefuroximeMIP1500MG-EE-MarketingAuthorisation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Ingredient/cefuroxime-1500mg-Ingredient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AdministrableProductDefinition/cefuroxime-1500mg-solution-vial.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\Filing\Unicom\FSH\output\MedicinalProductDefinition-CefuroximeMIP1500MG-EE.html#/html/body/div/div/div/div/div/div/div/blockquote/p/a at Line 162, column 2075: The link 'CefuroximeMIP1500MG-EE-Package002' for "CefuroximeMIP1500MG-EE-Package002" cannot be resolved
+== fsh-generated\resources\ImplementationGuide-fhir.example.unicom.ppl.json ==
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.fhirVersion[0]: The value provided ('4.6.0') is not in the value set http://hl7.org/fhir/ValueSet/FHIR-version|4.5.0 (http://hl7.org/fhir/ValueSet/FHIR-version), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/FHIR-version#4.6.0 in http://hl7.org/fhir/FHIR-version)
+== fsh-generated\resources\AdministrableProductDefinition-cefuroxime-1500mg-solution-vial.json ==
+INFORMATION: AdministrableProductDefinition/cefuroxime-1500mg-solution-vial: AdministrableProductDefinition.administrableDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
+INFORMATION: AdministrableProductDefinition/cefuroxime-1500mg-solution-vial: AdministrableProductDefinition.unitOfPresentation.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+INFORMATION: AdministrableProductDefinition/cefuroxime-1500mg-solution-vial: AdministrableProductDefinition.routeOfAdministration[0].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated
+INFORMATION: AdministrableProductDefinition/cefuroxime-1500mg-solution-vial: AdministrableProductDefinition.routeOfAdministration[1].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated
+== fsh-generated\resources\Ingredient-cefuroxime-1500mg-Ingredient.json ==
+INFORMATION: Ingredient/cefuroxime-1500mg-Ingredient: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cefuroxime-1500mg-Ingredient: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cefuroxime-1500mg-Ingredient: Ingredient.substance.strength[0].referenceStrength[0].substance.concept.coding[0]: Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cefuroxime-1500mg-Ingredient: Ingredient.substance.strength[0].referenceStrength[0].strength.ofType(Ratio).numerator: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cefuroxime-1500mg-Ingredient: Ingredient.substance.strength[0].referenceStrength[0].strength.ofType(Ratio).denominator: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+== fsh-generated\resources\ManufacturedItemDefinition-CefuroximeMIP1500MG-EE-ManItem001.json ==
+INFORMATION: ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001: ManufacturedItemDefinition.manufacturedDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
+INFORMATION: ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001: ManufacturedItemDefinition.unitOfPresentation.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+== fsh-generated\resources\MedicinalProductDefinition-CefuroximeMIP1500MG-EE.json ==
+ERROR: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.extension[0]: The extension http://ema.europa.eu/fhir/extension/authorisedDoseForm is unknown, and not allowed here
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.extension[0].value.ofType(Coding): Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.domain.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000004' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.legalStatusOfSupply.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072051' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.classification[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000093533' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.name[0].namePart[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.name[0].namePart[1].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.name[0].namePart[2].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.name[0].countryLanguage[0].country.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated
+INFORMATION: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.name[0].countryLanguage[0].language.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072057' is unknown so the code cannot be validated
+ERROR: MedicinalProductDefinition/CefuroximeMIP1500MG-EE: MedicinalProductDefinition.package[1].package: Unable to resolve resource 'CefuroximeMIP1500MG-EE-Package002'
+== fsh-generated\resources\PackagedProductDefinition-CefuroximeMIP1500MG-EE-Package001.json ==
+INFORMATION: PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001: PackagedProductDefinition.package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated
+INFORMATION: PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001: PackagedProductDefinition.package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated
+INFORMATION: PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001: PackagedProductDefinition.package.package[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated
+INFORMATION: PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001: PackagedProductDefinition.package.package[0].material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated
+== fsh-generated\resources\RegulatedAuthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation.json ==
+INFORMATION: RegulatedAuthorization/CefuroximeMIP1500MG-EE-MarketingAuthorisation: RegulatedAuthorization.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000060' is unknown so the code cannot be validated
+INFORMATION: RegulatedAuthorization/CefuroximeMIP1500MG-EE-MarketingAuthorisation: RegulatedAuthorization.region[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated
+INFORMATION: RegulatedAuthorization/CefuroximeMIP1500MG-EE-MarketingAuthorisation: RegulatedAuthorization.status.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072049' is unknown so the code cannot be validated

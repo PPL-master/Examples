@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AdministrableProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="cefuroxime-1500mg-solution-vial"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2021-10-08T12:01:24.628+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href="MedicinalProductDefinition-CefuroximeMIP1500MG-EE.html">Generated Summary: id: EE-100009199-00001111, id: 12345-cefuroxime-ee; <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}">Human use</span>; <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}">Medicinal Product subject to medical prescription</span>; <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000093533 100000096183}">cefuroxime J01DC02</span></a></p><p><b>administrableDoseForm</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000074038}">Solution for injection/infusion</span></p><p><b>unitOfPresentation</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}">Vial</span></p><p><b>producedFrom</b>: <a href="ManufacturedItemDefinition-CefuroximeMIP1500MG-EE-ManItem001.html">Generated Summary: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000074038}">Solution for injection/infusion</span>; <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}">Vial</span></a></p><p><b>ingredient</b>: <a href="Ingredient-cefuroxime-1500mg-Ingredient.html">Generated Summary: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}">Active</span></a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000073345 100000073600}">Intramuscular use</span></p></blockquote><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000073345 100000073611}">Intravenous use</span></p></blockquote></div>
+  </text>
+  <subject>
+    <reference value="MedicinalProductDefinition/CefuroximeMIP1500MG-EE"/>
+  </subject>
+  <administrableDoseForm>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+      <code value="100000074038"/>
+      <display value="Solution for injection/infusion"/>
+    </coding>
+  </administrableDoseForm>
+  <unitOfPresentation>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+      <code value="200000002158"/>
+      <display value="Vial"/>
+    </coding>
+  </unitOfPresentation>
+  <producedFrom>
+    <reference value="ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001"/>
+  </producedFrom>
+  <ingredient>
+    <reference value="Ingredient/cefuroxime-1500mg-Ingredient"/>
+  </ingredient>
+  <routeOfAdministration>
+    <code>
+      <coding>
+        <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+        <code value="100000073600"/>
+        <display value="Intramuscular use"/>
+      </coding>
+    </code>
+  </routeOfAdministration>
+  <routeOfAdministration>
+    <code>
+      <coding>
+        <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+        <code value="100000073611"/>
+        <display value="Intravenous use"/>
+      </coding>
+    </code>
+  </routeOfAdministration>
+</AdministrableProductDefinition>

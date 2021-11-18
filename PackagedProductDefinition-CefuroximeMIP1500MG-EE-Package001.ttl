@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/unicom/ppl/PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001> a fhir:PackagedProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CefuroximeMIP1500MG-EE-Package001"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2021-10-08T11:43:00.83+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EE-100009199-00001111-001</p><p><b>description</b>: II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal</p><blockquote><p><b>package</b></p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>package</b></p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 200000002158}\">Vial</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003205}\">Glass type II</span></p></blockquote></blockquote></div>"
+  ];
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/pcid" ];
+     fhir:Identifier.value [ fhir:value "EE-100009199-00001111-001" ]
+  ];
+  fhir:PackagedProductDefinition.description [ fhir:value "II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal"];
+  fhir:PackagedProductDefinition.package [
+     fhir:PackagedProductDefinition.package.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+         fhir:Coding.code [ fhir:value "100000073498" ];
+         fhir:Coding.display [ fhir:value "Box" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+     fhir:PackagedProductDefinition.package.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+         fhir:Coding.code [ fhir:value "200000003529" ];
+         fhir:Coding.display [ fhir:value "Cardboard" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.package.package [
+       fhir:index 0;
+       fhir:PackagedProductDefinition.package.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+           fhir:Coding.code [ fhir:value "200000002158" ];
+           fhir:Coding.display [ fhir:value "Vial" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+       fhir:PackagedProductDefinition.package.material [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003205" ];
+           fhir:Coding.display [ fhir:value "Glass type II" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.package.containedItem [
+         fhir:index 0;
+         fhir:PackagedProductDefinition.package.containedItem.item [
+           fhir:index 0;
+           fhir:CodeableReference.reference [
+             fhir:link <http://example.org/unicom/ppl/ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001>;
+             fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.package.containedItem.amountInteger [ fhir:value "1"^^xsd:integer ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/unicom/ppl/PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ManufacturedItemDefinition xmlns="http://hl7.org/fhir">
+  <id value="CefuroximeMIP1500MG-EE-ManItem001"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2021-10-08T10:58:18.744+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>manufacturedDoseForm</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000074038}">Solution for injection/infusion</span></p><p><b>unitOfPresentation</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}">Vial</span></p></div>
+  </text>
+  <manufacturedDoseForm>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+      <code value="100000074038"/>
+      <display value="Solution for injection/infusion"/>
+    </coding>
+  </manufacturedDoseForm>
+  <unitOfPresentation>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+      <code value="200000002158"/>
+      <display value="Vial"/>
+    </coding>
+  </unitOfPresentation>
+  <ingredient>
+    <reference>
+      <reference value="Ingredient/cefuroxime-1500mg-Ingredient"/>
+    </reference>
+  </ingredient>
+</ManufacturedItemDefinition>

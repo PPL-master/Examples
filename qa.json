@@ -1,0 +1,12 @@
+{
+  "url": "http://example.org/unicom/ppl/ImplementationGuide/fhir.example.unicom.ppl",
+  "name": "IDMP_IG",
+  "package-id": "fhir.example.unicom.ppl",
+  "ig-ver": "0.1.0",
+  "date": "Thu, 18 Nov, 2021 13:28:33 +0000",
+  "errs": 3,
+  "warnings": 5,
+  "hints": 27,
+  "version": "4.6.0",
+  "tool": "4.6.0 (3)"
+}

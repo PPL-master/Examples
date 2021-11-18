@@ -1,0 +1,275 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/unicom/ppl/ImplementationGuide/fhir.example.unicom.ppl> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir.example.unicom.ppl"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IDMP_IG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/unicom/ppl/ImplementationGuide/fhir.example.unicom.ppl</pre><div><p>Sample IDMP data</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://example.org/unicom/ppl/ImplementationGuide/fhir.example.unicom.ppl"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "IDMP_IG"];
+  fhir:ImplementationGuide.title [ fhir:value "PPL Examples"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-18T13:28:33+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Unicom Project"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Unicom Project" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://unicom-project.eu/" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Sample IDMP data"];
+  fhir:ImplementationGuide.packageId [ fhir:value "fhir.example.unicom.ppl"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.6.0";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/unicom/ppl/MedicinalProductDefinition/CefuroximeMIP1500MG-EE>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/CefuroximeMIP1500MG-EE" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/unicom/ppl/ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE-ManItem001" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "RegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/unicom/ppl/RegulatedAuthorization/CefuroximeMIP1500MG-EE-MarketingAuthorisation>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/CefuroximeMIP1500MG-EE-MarketingAuthorisation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE-MarketingAuthorisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/unicom/ppl/PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001>;
+         fhir:Reference.reference [ fhir:value "PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE-Package001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/unicom/ppl/Ingredient/cefuroxime-1500mg-Ingredient>;
+         fhir:Reference.reference [ fhir:value "Ingredient/cefuroxime-1500mg-Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cefuroxime-1500mg-Ingredient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/unicom/ppl/AdministrableProductDefinition/cefuroxime-1500mg-solution-vial>;
+         fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/cefuroxime-1500mg-solution-vial" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cefuroxime-1500mg-solution-vial" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "copyrightyear" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "2021+" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "releaselabel" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "current" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 15;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 16;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-liquid" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/liquid" ]
+     ], [
+       fhir:index 17;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-liquid" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/liquid" ]
+     ], [
+       fhir:index 18;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-qa" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/qa" ]
+     ], [
+       fhir:index 19;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-temp" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/pages" ]
+     ], [
+       fhir:index 20;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-output" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "output" ]
+     ], [
+       fhir:index 21;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ], [
+       fhir:index 22;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-suppressed-warnings" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/ignoreWarnings.txt" ]
+     ], [
+       fhir:index 23;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-history" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "http://example.org/unicom/ppl/history.html" ]
+     ], [
+       fhir:index 24;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-html" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page.html" ]
+     ], [
+       fhir:index 25;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-md" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page-md.html" ]
+     ], [
+       fhir:index 26;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-contact" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 27;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-context" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 28;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-copyright" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 29;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-jurisdiction" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 30;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-license" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 31;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-publisher" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 32;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-version" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 33;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "active-tables" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/unicom/ppl/ImplementationGuide/fhir.example.unicom.ppl.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

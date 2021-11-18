@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Ingredient xmlns="http://hl7.org/fhir">
+  <id value="cefuroxime-1500mg-Ingredient"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2021-10-07T20:14:59.453+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>role</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}">Active</span></p><blockquote><p><b>substance</b></p><blockquote><p><b>strength</b></p><blockquote><p><b>referenceStrength</b></p><p><b>strength</b>: 1500 milligram(s)/1 vial</p></blockquote></blockquote></blockquote></div>
+  </text>
+  <role>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+      <code value="100000072072"/>
+      <display value="Active"/>
+    </coding>
+  </role>
+  <substance>
+    <code>
+      <concept>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+          <code value="100000091436"/>
+          <display value="CEFUROXIME SODIUM"/>
+        </coding>
+      </concept>
+    </code>
+    <strength>
+      <referenceStrength>
+        <substance>
+          <concept>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+              <code value="100000092667"/>
+              <display value="CEFUROXIME"/>
+            </coding>
+          </concept>
+        </substance>
+        <strengthRatio>
+          <numerator>
+            <value value="1500"/>
+            <unit value="milligram(s)"/>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000110633"/>
+            <code value="100000110655"/>
+          </numerator>
+          <denominator>
+            <value value="1"/>
+            <unit value="vial"/>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+            <code value="200000002158"/>
+          </denominator>
+        </strengthRatio>
+      </referenceStrength>
+    </strength>
+  </substance>
+</Ingredient>

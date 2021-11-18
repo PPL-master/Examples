@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/unicom/ppl/ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001> a fhir:ManufacturedItemDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CefuroximeMIP1500MG-EE-ManItem001"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2021-10-08T10:58:18.744+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>manufacturedDoseForm</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000074038}\">Solution for injection/infusion</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}\">Vial</span></p></div>"
+  ];
+  fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000074038" ];
+       fhir:Coding.display [ fhir:value "Solution for injection/infusion" ]
+     ]
+  ];
+  fhir:ManufacturedItemDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002158" ];
+       fhir:Coding.display [ fhir:value "Vial" ]
+     ]
+  ];
+  fhir:ManufacturedItemDefinition.ingredient [
+     fhir:index 0;
+     fhir:CodeableReference.reference [
+       fhir:link <http://example.org/unicom/ppl/Ingredient/cefuroxime-1500mg-Ingredient>;
+       fhir:Reference.reference [ fhir:value "Ingredient/cefuroxime-1500mg-Ingredient" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/unicom/ppl/ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

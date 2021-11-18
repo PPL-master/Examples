@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicinalProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="CefuroximeMIP1500MG-EE"/>
+  <meta>
+    <versionId value="7"/>
+    <lastUpdated value="2021-10-21T10:38:17.677+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EE-100009199-00001111, id: 12345-cefuroxime-ee</p><p><b>domain</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}">Human use</span></p><p><b>legalStatusOfSupply</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}">Medicinal Product subject to medical prescription</span></p><p><b>classification</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000093533 100000096183}">cefuroxime J01DC02</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber</p><blockquote><p><b>namePart</b></p><p><b>part</b>: Cefuroxime</p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}">Invented name part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 1500 mg</p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}">Strength part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: süste-/infusioonilahuse pulber</p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}">Pharmaceutical dose form part</span></p></blockquote><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td>*</td><td><span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}">Estonia</span></td><td><span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072057 100000072172}">Estonian</span></td></tr></table></blockquote><blockquote><p><b>package</b></p><p><b>package</b>: <a href="PackagedProductDefinition-CefuroximeMIP1500MG-EE-Package001.html">Generated Summary: id: EE-100009199-00001111-001; description: II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal</a></p></blockquote><blockquote><p><b>package</b></p><p><b>package</b>: <a href="CefuroximeMIP1500MG-EE-Package002">CefuroximeMIP1500MG-EE-Package002</a></p></blockquote></div>
+  </text>
+  <extension url="http://ema.europa.eu/fhir/extension/authorisedDoseForm">
+    <valueCoding>
+      <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+      <code value="100000116186"/>
+      <display value="Powder for solution for injection/infusion"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="http://ema.europa.eu/example/MPID"/>
+    <value value="EE-100009199-00001111"/>
+  </identifier>
+  <identifier>
+    <system value="http://ema.europa.eu/fhir/pmsId"/>
+    <value value="12345-cefuroxime-ee"/>
+  </identifier>
+  <domain>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/100000000004"/>
+      <code value="100000000012"/>
+      <display value="Human use"/>
+    </coding>
+  </domain>
+  <legalStatusOfSupply>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/100000072051"/>
+      <code value="100000072084"/>
+      <display value="Medicinal Product subject to medical prescription"/>
+    </coding>
+  </legalStatusOfSupply>
+  <classification>
+    <coding>
+      <system value="https://spor.ema.europa.eu/v1/lists/100000093533"/>
+      <code value="100000096183"/>
+      <display value="cefuroxime J01DC02"/>
+    </coding>
+  </classification>
+  <name>
+    <productName value="Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"/>
+    <namePart>
+      <part value="Cefuroxime"/>
+      <type>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v1/lists/220000000000"/>
+          <code value="220000000002"/>
+          <display value="Invented name part"/>
+        </coding>
+      </type>
+    </namePart>
+    <namePart>
+      <part value="1500 mg"/>
+      <type>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v1/lists/220000000000"/>
+          <code value="220000000004"/>
+          <display value="Strength part"/>
+        </coding>
+      </type>
+    </namePart>
+    <namePart>
+      <part value="süste-/infusioonilahuse pulber"/>
+      <type>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v1/lists/220000000000"/>
+          <code value="220000000005"/>
+          <display value="Pharmaceutical dose form part"/>
+        </coding>
+      </type>
+    </namePart>
+    <countryLanguage>
+      <country>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v1/lists/100000000002"/>
+          <code value="100000000388"/>
+          <display value="Estonia"/>
+        </coding>
+      </country>
+      <language>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v1/lists/100000072057"/>
+          <code value="100000072172"/>
+          <display value="Estonian"/>
+        </coding>
+      </language>
+    </countryLanguage>
+  </name>
+  <package>
+    <package>
+      <reference value="PackagedProductDefinition/CefuroximeMIP1500MG-EE-Package001"/>
+    </package>
+  </package>
+  <package>
+    <package>
+      <reference value="CefuroximeMIP1500MG-EE-Package002"/>
+    </package>
+  </package>
+</MedicinalProductDefinition>
