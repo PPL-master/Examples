@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="CanifugCremolum-EE-Bundle"/>
+  <type value="transaction"/>
+  <entry>
+    <resource>
+      <AdministrableProductDefinition>
+        <id value="clotrimazole-cream-10mg-g"/>
+        <meta>
+          <versionId value="5"/>
+          <lastUpdated value="2021-11-22T21:51:01.044+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href="#MedicinalProductDefinition_CanifugCremolum-EE">See above (MedicinalProductDefinition/CanifugCremolum-EE)</a></p><p><b>administrableDoseForm</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073712}">Cream</span></p><p><b>ingredient</b>: <a href="#Ingredient_CanifugCremolum-Ingredient-1">See above (Ingredient/CanifugCremolum-Ingredient-1)</a></p><h3>RouteOfAdministrations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000073345 100000073566}">Cutaneous use</span></td></tr></table></div>
+        </text>
+        <subject>
+          <reference value="MedicinalProductDefinition/CanifugCremolum-EE"/>
+        </subject>
+        <administrableDoseForm>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+            <code value="100000073712"/>
+            <display value="Cream"/>
+          </coding>
+        </administrableDoseForm>
+        <ingredient>
+          <reference value="Ingredient/CanifugCremolum-Ingredient-1"/>
+        </ingredient>
+        <routeOfAdministration>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+              <code value="100000073566"/>
+              <display value="Cutaneous use"/>
+            </coding>
+          </code>
+        </routeOfAdministration>
+      </AdministrableProductDefinition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="AdministrableProductDefinition/clotrimazole-cream-10mg-g"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <AdministrableProductDefinition>
+        <id value="clotrimazole-pessary-100mg"/>
+        <meta>
+          <versionId value="5"/>
+          <lastUpdated value="2021-11-22T21:51:01.112+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href="#MedicinalProductDefinition_CanifugCremolum-EE">See above (MedicinalProductDefinition/CanifugCremolum-EE)</a></p><p><b>administrableDoseForm</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073815}">Pessary</span></p><p><b>unitOfPresentation</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002137}">Pessary</span></p><p><b>ingredient</b>: <a href="#Ingredient_CanifugCremolum-Ingredient-2">See above (Ingredient/CanifugCremolum-Ingredient-2)</a></p><h3>RouteOfAdministrations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000073345 100000073639}">Vaginal use</span></td></tr></table></div>
+        </text>
+        <subject>
+          <reference value="MedicinalProductDefinition/CanifugCremolum-EE"/>
+        </subject>
+        <administrableDoseForm>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+            <code value="100000073815"/>
+            <display value="Pessary"/>
+          </coding>
+        </administrableDoseForm>
+        <unitOfPresentation>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+            <code value="200000002137"/>
+            <display value="Pessary"/>
+          </coding>
+        </unitOfPresentation>
+        <ingredient>
+          <reference value="Ingredient/CanifugCremolum-Ingredient-2"/>
+        </ingredient>
+        <routeOfAdministration>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+              <code value="100000073639"/>
+              <display value="Vaginal use"/>
+            </coding>
+          </code>
+        </routeOfAdministration>
+      </AdministrableProductDefinition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="AdministrableProductDefinition/clotrimazole-pessary-100mg"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <Ingredient>
+        <id value="CanifugCremolum-Ingredient-1"/>
+        <meta>
+          <versionId value="5"/>
+          <lastUpdated value="2021-11-22T21:51:01.14+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>role</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}">Active</span></p><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class="grid"><tr><td>-</td><td><b>Concentration[x]</b></td></tr><tr><td>*</td><td>10 milligram(s)/1 gram(s)</td></tr></table></blockquote></div>
+        </text>
+        <role>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+            <code value="100000072072"/>
+            <display value="Active"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <concept>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+                <code value="100000092074"/>
+                <display value="CLOTRIMAZOLE"/>
+              </coding>
+            </concept>
+          </code>
+          <strength>
+            <concentrationRatio>
+              <numerator>
+                <value value="10"/>
+                <unit value="milligram(s)"/>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000110633"/>
+                <code value="100000110655"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="gram(s)"/>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000110633"/>
+                <code value="100000110654"/>
+              </denominator>
+            </concentrationRatio>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Ingredient/CanifugCremolum-Ingredient-1"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <Ingredient>
+        <id value="CanifugCremolum-Ingredient-2"/>
+        <meta>
+          <versionId value="5"/>
+          <lastUpdated value="2021-11-22T21:51:01.16+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>role</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}">Active</span></p><blockquote><p><b>substance</b></p><blockquote><p><b>strength</b></p><p><b>presentation</b>: 100 milligram(s)/1 Pessary</p><blockquote><p><b>referenceStrength</b></p><p><b>strength</b>: 100 milligram(s)/1 Pessary</p></blockquote></blockquote></blockquote></div>
+        </text>
+        <role>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+            <code value="100000072072"/>
+            <display value="Active"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <concept>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+                <code value="100000092074"/>
+                <display value="Clotrimazole"/>
+              </coding>
+            </concept>
+          </code>
+          <strength>
+            <presentationRatio>
+              <numerator>
+                <value value="100"/>
+                <unit value="milligram(s)"/>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000110633"/>
+                <code value="100000110655"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="Pessary"/>
+                <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+                <code value="200000002137"/>
+              </denominator>
+            </presentationRatio>
+            <referenceStrength>
+              <substance>
+                <concept>
+                  <coding>
+                    <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+                    <code value="100000092074"/>
+                    <display value="Clotrimazole"/>
+                  </coding>
+                </concept>
+              </substance>
+              <strengthRatio>
+                <numerator>
+                  <value value="100"/>
+                  <unit value="milligram(s)"/>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000110633"/>
+                  <code value="100000110655"/>
+                </numerator>
+                <denominator>
+                  <value value="1"/>
+                  <unit value="Pessary"/>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+                  <code value="200000002137"/>
+                </denominator>
+              </strengthRatio>
+            </referenceStrength>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Ingredient/CanifugCremolum-Ingredient-2"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <ManufacturedItemDefinition>
+        <id value="CanifugCremolum-EE-ManItem001"/>
+        <meta>
+          <versionId value="5"/>
+          <lastUpdated value="2021-11-22T21:51:01.171+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>manufacturedDoseForm</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073712}">Cream</span></p><p><b>unitOfPresentation</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002156}">Tube</span></p></div>
+        </text>
+        <manufacturedDoseForm>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+            <code value="100000073712"/>
+            <display value="Cream"/>
+          </coding>
+        </manufacturedDoseForm>
+        <unitOfPresentation>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+            <code value="200000002156"/>
+            <display value="Tube"/>
+          </coding>
+        </unitOfPresentation>
+        <ingredient>
+          <reference>
+            <reference value="Ingredient/CanifugCremolum-Ingredient-1"/>
+          </reference>
+        </ingredient>
+      </ManufacturedItemDefinition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="ManufacturedItemDefinition/CanifugCremolum-EE-ManItem001"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <ManufacturedItemDefinition>
+        <id value="CanifugCremolum-EE-ManItem002"/>
+        <meta>
+          <versionId value="5"/>
+          <lastUpdated value="2021-11-22T21:51:01.192+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>manufacturedDoseForm</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073815}">Pessary</span></p><p><b>unitOfPresentation</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002137}">Pessary</span></p></div>
+        </text>
+        <manufacturedDoseForm>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+            <code value="100000073815"/>
+            <display value="Pessary"/>
+          </coding>
+        </manufacturedDoseForm>
+        <unitOfPresentation>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000014"/>
+            <code value="200000002137"/>
+            <display value="Pessary"/>
+          </coding>
+        </unitOfPresentation>
+        <ingredient>
+          <reference>
+            <reference value="Ingredient/CanifugCremolum-Ingredient-2"/>
+          </reference>
+        </ingredient>
+      </ManufacturedItemDefinition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="ManufacturedItemDefinition/CanifugCremolum-EE-ManItem002"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="CanifugCremolum-EE"/>
+        <meta>
+          <versionId value="6"/>
+          <lastUpdated value="2021-11-22T21:51:01.228+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EE-100004795-00002222, id: 12345-canifugcremolum-ee</p><p><b>domain</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}">Human use</span></p><p><b>legalStatusOfSupply</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}">Medicinal Product subject to medical prescription</span></p><p><b>classification</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000093533 100000095693}">clotrimazole G01AF02</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Canifug Cremolum, 100 mg + 10mg/g, vaginaalsuposiidid + kreem</p><blockquote><p><b>namePart</b></p><p><b>part</b>: Canifug Cremolum</p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}">Invented name part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 100 mg + 10mg/g</p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}">Strength part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: vaginaalsuposiidid + kreem</p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}">Pharmaceutical dose form part</span></p></blockquote><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td>*</td><td><span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}">Estonia</span></td><td><span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072057 100000072172}">Estonian</span></td></tr></table></blockquote><h3>Packages</h3><table class="grid"><tr><td>-</td><td><b>Package</b></td></tr><tr><td>*</td><td><a href="#PackagedProductDefinition_CanifugCremolum-EE-Package001">See above (PackagedProductDefinition/CanifugCremolum-EE-Package001)</a></td></tr></table></div>
+        </text>
+        <extension url="http://ema.europa.eu/fhir/extension/authorisedDoseForm">
+          <valueCoding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000008"/>
+            <code value="100000173972"/>
+            <display value="Cream + pessary"/>
+          </valueCoding>
+        </extension>
+        <identifier>
+          <system value="http://ema.europa.eu/example/MPID"/>
+          <value value="EE-100004795-00002222"/>
+        </identifier>
+        <identifier>
+          <system value="http://ema.europa.eu/fhir/pmsId"/>
+          <value value="12345-canifugcremolum-ee"/>
+        </identifier>
+        <domain>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000000004"/>
+            <code value="100000000012"/>
+            <display value="Human use"/>
+          </coding>
+        </domain>
+        <legalStatusOfSupply>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000072051"/>
+            <code value="100000072084"/>
+            <display value="Medicinal Product subject to medical prescription"/>
+          </coding>
+        </legalStatusOfSupply>
+        <classification>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000093533"/>
+            <code value="100000095693"/>
+            <display value="clotrimazole G01AF02"/>
+          </coding>
+        </classification>
+        <name>
+          <productName value="Canifug Cremolum, 100 mg + 10mg/g, vaginaalsuposiidid + kreem"/>
+          <namePart>
+            <part value="Canifug Cremolum"/>
+            <type>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/220000000000"/>
+                <code value="220000000002"/>
+                <display value="Invented name part"/>
+              </coding>
+            </type>
+          </namePart>
+          <namePart>
+            <part value="100 mg + 10mg/g"/>
+            <type>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/220000000000"/>
+                <code value="220000000004"/>
+                <display value="Strength part"/>
+              </coding>
+            </type>
+          </namePart>
+          <namePart>
+            <part value="vaginaalsuposiidid + kreem"/>
+            <type>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/220000000000"/>
+                <code value="220000000005"/>
+                <display value="Pharmaceutical dose form part"/>
+              </coding>
+            </type>
+          </namePart>
+          <countryLanguage>
+            <country>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000000002"/>
+                <code value="100000000388"/>
+                <display value="Estonia"/>
+              </coding>
+            </country>
+            <language>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000072057"/>
+                <code value="100000072172"/>
+                <display value="Estonian"/>
+              </coding>
+            </language>
+          </countryLanguage>
+        </name>
+        <package>
+          <package>
+            <reference value="PackagedProductDefinition/CanifugCremolum-EE-Package001"/>
+          </package>
+        </package>
+      </MedicinalProductDefinition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="MedicinalProductDefinition/CanifugCremolum-EE"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <PackagedProductDefinition>
+        <id value="CanifugCremolum-EE-Package001"/>
+        <meta>
+          <versionId value="5"/>
+          <lastUpdated value="2021-11-22T21:51:01.337+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EE-100004795-00002222-001</p><p><b>description</b>: Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi.</p><blockquote><p><b>package</b></p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}">Cardboard</span></p><blockquote><p><b>package</b></p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 100000073559}">Strip</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003200}">Aluminium</span>, <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003214}">PolyEthylene</span></p></blockquote><blockquote><p><b>package</b></p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}">Cardboard</span></p></blockquote></blockquote></div>
+        </text>
+        <identifier>
+          <system value="http://ema.europa.eu/example/pcid"/>
+          <value value="EE-100004795-00002222-001"/>
+        </identifier>
+        <description value="Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi."/>
+        <package>
+          <type>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000073346"/>
+              <code value="100000073498"/>
+              <display value="Box"/>
+            </coding>
+          </type>
+          <quantity value="1"/>
+          <material>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/200000003199"/>
+              <code value="200000003529"/>
+              <display value="Cardboard"/>
+            </coding>
+          </material>
+          <package>
+            <type>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000073346"/>
+                <code value="100000073559"/>
+                <display value="Strip"/>
+              </coding>
+            </type>
+            <quantity value="1"/>
+            <material>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/200000003199"/>
+                <code value="200000003200"/>
+                <display value="Aluminium"/>
+              </coding>
+            </material>
+            <material>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/200000003199"/>
+                <code value="200000003214"/>
+                <display value="PolyEthylene"/>
+              </coding>
+            </material>
+            <containedItem>
+              <item>
+                <reference>
+                  <reference value="ManufacturedItemDefinition/CanifugCremolum-EE-ManItem002"/>
+                </reference>
+              </item>
+              <amountInteger value="6"/>
+            </containedItem>
+          </package>
+          <package>
+            <type>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000073346"/>
+                <code value="100000073498"/>
+                <display value="Box"/>
+              </coding>
+            </type>
+            <quantity value="1"/>
+            <material>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/200000003199"/>
+                <code value="200000003529"/>
+                <display value="Cardboard"/>
+              </coding>
+            </material>
+            <package>
+              <type>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073346"/>
+                  <code value="100000073561"/>
+                  <display value="Tube"/>
+                </coding>
+              </type>
+              <quantity value="1"/>
+              <material>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000003199"/>
+                  <code value="200000003200"/>
+                  <display value="Aluminium"/>
+                </coding>
+              </material>
+              <containedItem>
+                <item>
+                  <reference>
+                    <reference value="ManufacturedItemDefinition/CanifugCremolum-EE-ManItem001"/>
+                  </reference>
+                </item>
+                <amountQuantity>
+                  <value value="20"/>
+                  <unit value="gram(s)"/>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000110633"/>
+                  <code value="100000110654"/>
+                </amountQuantity>
+              </containedItem>
+            </package>
+          </package>
+        </package>
+      </PackagedProductDefinition>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="PackagedProductDefinition/CanifugCremolum-EE-Package001"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <RegulatedAuthorization>
+        <id value="CanifugCremolum-EE-MarketingAuthorisation"/>
+        <meta>
+          <versionId value="12"/>
+          <lastUpdated value="2021-11-22T21:51:01.375+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 366201</p><p><b>subject</b>: <a href="#MedicinalProductDefinition_CanifugCremolum-EE">See above (MedicinalProductDefinition/CanifugCremolum-EE)</a></p><p><b>type</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}">Marketing Authorisation</span></p><p><b>region</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}">Estonia</span></p><p><b>status</b>: <span title="Codes: {https://spor.ema.europa.eu/v1/lists/100000072049 200000017708}">Valid - Renewed/Varied</span></p><p><b>statusDate</b>: 2017-12-06</p><p><b>holder</b>: <span>Dr. August Wolff GmbH and Co. KG Arzneimittel</span></p></div>
+        </text>
+        <identifier>
+          <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+          <value value="366201"/>
+        </identifier>
+        <subject>
+          <reference value="MedicinalProductDefinition/CanifugCremolum-EE"/>
+        </subject>
+        <type>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/220000000060"/>
+            <code value="220000000061"/>
+            <display value="Marketing Authorisation"/>
+          </coding>
+        </type>
+        <region>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000000002"/>
+            <code value="100000000388"/>
+            <display value="Estonia"/>
+          </coding>
+        </region>
+        <status>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000072049"/>
+            <code value="200000017708"/>
+            <display value="Valid - Renewed/Varied"/>
+          </coding>
+        </status>
+        <statusDate value="2017-12-06"/>
+        <holder>
+          <identifier>
+            <system value="https://spor.ema.europa.eu/v1/locations"/>
+            <value value="LOC-100004795"/>
+          </identifier>
+          <display value="Dr. August Wolff GmbH and Co. KG Arzneimittel"/>
+        </holder>
+      </RegulatedAuthorization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="RegulatedAuthorization/CanifugCremolum-EE-MarketingAuthorisation"/>
+    </request>
+  </entry>
+</Bundle>

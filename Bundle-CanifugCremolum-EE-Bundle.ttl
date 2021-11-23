@@ -1,0 +1,667 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/unicom/ppl/Bundle/CanifugCremolum-EE-Bundle> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CanifugCremolum-EE-Bundle"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.resource [
+       a fhir:AdministrableProductDefinition;
+       fhir:Resource.id [ fhir:value "clotrimazole-cream-10mg-g" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "5" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.044+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_CanifugCremolum-EE\">See above (MedicinalProductDefinition/CanifugCremolum-EE)</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073712}\">Cream</span></p><p><b>ingredient</b>: <a href=\"#Ingredient_CanifugCremolum-Ingredient-1\">See above (Ingredient/CanifugCremolum-Ingredient-1)</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000073345 100000073566}\">Cutaneous use</span></td></tr></table></div>"
+       ];
+       fhir:AdministrableProductDefinition.subject [
+         fhir:index 0;
+         fhir:link <http://example.org/unicom/ppl/MedicinalProductDefinition/CanifugCremolum-EE>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/CanifugCremolum-EE" ]
+       ];
+       fhir:AdministrableProductDefinition.administrableDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+           fhir:Coding.code [ fhir:value "100000073712" ];
+           fhir:Coding.display [ fhir:value "Cream" ]
+         ]
+       ];
+       fhir:AdministrableProductDefinition.ingredient [
+         fhir:index 0;
+         fhir:link <http://example.org/unicom/ppl/Ingredient/CanifugCremolum-Ingredient-1>;
+         fhir:Reference.reference [ fhir:value "Ingredient/CanifugCremolum-Ingredient-1" ]
+       ];
+       fhir:AdministrableProductDefinition.routeOfAdministration [
+         fhir:index 0;
+         fhir:AdministrableProductDefinition.routeOfAdministration.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073345" ];
+             fhir:Coding.code [ fhir:value "100000073566" ];
+             fhir:Coding.display [ fhir:value "Cutaneous use" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "AdministrableProductDefinition/clotrimazole-cream-10mg-g" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.resource [
+       a fhir:AdministrableProductDefinition;
+       fhir:Resource.id [ fhir:value "clotrimazole-pessary-100mg" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "5" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.112+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_CanifugCremolum-EE\">See above (MedicinalProductDefinition/CanifugCremolum-EE)</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073815}\">Pessary</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002137}\">Pessary</span></p><p><b>ingredient</b>: <a href=\"#Ingredient_CanifugCremolum-Ingredient-2\">See above (Ingredient/CanifugCremolum-Ingredient-2)</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000073345 100000073639}\">Vaginal use</span></td></tr></table></div>"
+       ];
+       fhir:AdministrableProductDefinition.subject [
+         fhir:index 0;
+         fhir:link <http://example.org/unicom/ppl/MedicinalProductDefinition/CanifugCremolum-EE>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/CanifugCremolum-EE" ]
+       ];
+       fhir:AdministrableProductDefinition.administrableDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+           fhir:Coding.code [ fhir:value "100000073815" ];
+           fhir:Coding.display [ fhir:value "Pessary" ]
+         ]
+       ];
+       fhir:AdministrableProductDefinition.unitOfPresentation [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+           fhir:Coding.code [ fhir:value "200000002137" ];
+           fhir:Coding.display [ fhir:value "Pessary" ]
+         ]
+       ];
+       fhir:AdministrableProductDefinition.ingredient [
+         fhir:index 0;
+         fhir:link <http://example.org/unicom/ppl/Ingredient/CanifugCremolum-Ingredient-2>;
+         fhir:Reference.reference [ fhir:value "Ingredient/CanifugCremolum-Ingredient-2" ]
+       ];
+       fhir:AdministrableProductDefinition.routeOfAdministration [
+         fhir:index 0;
+         fhir:AdministrableProductDefinition.routeOfAdministration.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073345" ];
+             fhir:Coding.code [ fhir:value "100000073639" ];
+             fhir:Coding.display [ fhir:value "Vaginal use" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "AdministrableProductDefinition/clotrimazole-pessary-100mg" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "CanifugCremolum-Ingredient-1" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "5" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.14+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>role</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Concentration[x]</b></td></tr><tr><td>*</td><td>10 milligram(s)/1 gram(s)</td></tr></table></blockquote></div>"
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072050" ];
+           fhir:Coding.code [ fhir:value "100000072072" ];
+           fhir:Coding.display [ fhir:value "Active" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+               fhir:Coding.code [ fhir:value "100000092074" ];
+               fhir:Coding.display [ fhir:value "CLOTRIMAZOLE" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength [
+           fhir:index 0;
+           fhir:Ingredient.substance.strength.concentrationRatio [
+             fhir:Ratio.numerator [
+               fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+               fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+               fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+               fhir:Quantity.code [ fhir:value "100000110655" ]
+             ];
+             fhir:Ratio.denominator [
+               fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+               fhir:Quantity.unit [ fhir:value "gram(s)" ];
+               fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+               fhir:Quantity.code [ fhir:value "100000110654" ]
+             ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Ingredient/CanifugCremolum-Ingredient-1" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "CanifugCremolum-Ingredient-2" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "5" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.16+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>role</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><blockquote><p><b>strength</b></p><p><b>presentation</b>: 100 milligram(s)/1 Pessary</p><blockquote><p><b>referenceStrength</b></p><p><b>strength</b>: 100 milligram(s)/1 Pessary</p></blockquote></blockquote></blockquote></div>"
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072050" ];
+           fhir:Coding.code [ fhir:value "100000072072" ];
+           fhir:Coding.display [ fhir:value "Active" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+               fhir:Coding.code [ fhir:value "100000092074" ];
+               fhir:Coding.display [ fhir:value "Clotrimazole" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength [
+           fhir:index 0;
+           fhir:Ingredient.substance.strength.presentationRatio [
+             fhir:Ratio.numerator [
+               fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+               fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+               fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+               fhir:Quantity.code [ fhir:value "100000110655" ]
+             ];
+             fhir:Ratio.denominator [
+               fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+               fhir:Quantity.unit [ fhir:value "Pessary" ];
+               fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+               fhir:Quantity.code [ fhir:value "200000002137" ]
+             ]
+           ];
+           fhir:Ingredient.substance.strength.referenceStrength [
+             fhir:index 0;
+             fhir:Ingredient.substance.strength.referenceStrength.substance [
+               fhir:CodeableReference.concept [
+                 fhir:CodeableConcept.coding [
+                   fhir:index 0;
+                   fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+                   fhir:Coding.code [ fhir:value "100000092074" ];
+                   fhir:Coding.display [ fhir:value "Clotrimazole" ]
+                 ]
+               ]
+             ];
+             fhir:Ingredient.substance.strength.referenceStrength.strengthRatio [
+               fhir:Ratio.numerator [
+                 fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+                 fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+                 fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+                 fhir:Quantity.code [ fhir:value "100000110655" ]
+               ];
+               fhir:Ratio.denominator [
+                 fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+                 fhir:Quantity.unit [ fhir:value "Pessary" ];
+                 fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+                 fhir:Quantity.code [ fhir:value "200000002137" ]
+               ]
+             ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Ingredient/CanifugCremolum-Ingredient-2" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.resource [
+       a fhir:ManufacturedItemDefinition;
+       fhir:Resource.id [ fhir:value "CanifugCremolum-EE-ManItem001" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "5" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.171+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>manufacturedDoseForm</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073712}\">Cream</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002156}\">Tube</span></p></div>"
+       ];
+       fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+           fhir:Coding.code [ fhir:value "100000073712" ];
+           fhir:Coding.display [ fhir:value "Cream" ]
+         ]
+       ];
+       fhir:ManufacturedItemDefinition.unitOfPresentation [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+           fhir:Coding.code [ fhir:value "200000002156" ];
+           fhir:Coding.display [ fhir:value "Tube" ]
+         ]
+       ];
+       fhir:ManufacturedItemDefinition.ingredient [
+         fhir:index 0;
+         fhir:CodeableReference.reference [
+           fhir:link <http://example.org/unicom/ppl/Ingredient/CanifugCremolum-Ingredient-1>;
+           fhir:Reference.reference [ fhir:value "Ingredient/CanifugCremolum-Ingredient-1" ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "ManufacturedItemDefinition/CanifugCremolum-EE-ManItem001" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.resource [
+       a fhir:ManufacturedItemDefinition;
+       fhir:Resource.id [ fhir:value "CanifugCremolum-EE-ManItem002" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "5" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.192+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>manufacturedDoseForm</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000004 100000073815}\">Pessary</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000000014 200000002137}\">Pessary</span></p></div>"
+       ];
+       fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+           fhir:Coding.code [ fhir:value "100000073815" ];
+           fhir:Coding.display [ fhir:value "Pessary" ]
+         ]
+       ];
+       fhir:ManufacturedItemDefinition.unitOfPresentation [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+           fhir:Coding.code [ fhir:value "200000002137" ];
+           fhir:Coding.display [ fhir:value "Pessary" ]
+         ]
+       ];
+       fhir:ManufacturedItemDefinition.ingredient [
+         fhir:index 0;
+         fhir:CodeableReference.reference [
+           fhir:link <http://example.org/unicom/ppl/Ingredient/CanifugCremolum-Ingredient-2>;
+           fhir:Reference.reference [ fhir:value "Ingredient/CanifugCremolum-Ingredient-2" ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "ManufacturedItemDefinition/CanifugCremolum-EE-ManItem002" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.resource [
+       a fhir:MedicinalProductDefinition;
+       fhir:Resource.id [ fhir:value "CanifugCremolum-EE" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "6" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.228+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EE-100004795-00002222, id: 12345-canifugcremolum-ee</p><p><b>domain</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>legalStatusOfSupply</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal Product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000093533 100000095693}\">clotrimazole G01AF02</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Canifug Cremolum, 100 mg + 10mg/g, vaginaalsuposiidid + kreem</p><blockquote><p><b>namePart</b></p><p><b>part</b>: Canifug Cremolum</p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 100 mg + 10mg/g</p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\">Strength part</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: vaginaalsuposiidid + kreem</p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}\">Pharmaceutical dose form part</span></p></blockquote><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td>*</td><td><span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Estonia</span></td><td><span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072057 100000072172}\">Estonian</span></td></tr></table></blockquote><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Package</b></td></tr><tr><td>*</td><td><a href=\"#PackagedProductDefinition_CanifugCremolum-EE-Package001\">See above (PackagedProductDefinition/CanifugCremolum-EE-Package001)</a></td></tr></table></div>"
+       ];
+       fhir:DomainResource.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/authorisedDoseForm" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000008" ];
+           fhir:Coding.code [ fhir:value "100000173972" ];
+           fhir:Coding.display [ fhir:value "Cream + pessary" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/MPID" ];
+         fhir:Identifier.value [ fhir:value "EE-100004795-00002222" ]
+       ], [
+         fhir:index 1;
+         fhir:Identifier.system [ fhir:value "http://ema.europa.eu/fhir/pmsId" ];
+         fhir:Identifier.value [ fhir:value "12345-canifugcremolum-ee" ]
+       ];
+       fhir:MedicinalProductDefinition.domain [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000004" ];
+           fhir:Coding.code [ fhir:value "100000000012" ];
+           fhir:Coding.display [ fhir:value "Human use" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.legalStatusOfSupply [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072051" ];
+           fhir:Coding.code [ fhir:value "100000072084" ];
+           fhir:Coding.display [ fhir:value "Medicinal Product subject to medical prescription" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.classification [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000093533" ];
+           fhir:Coding.code [ fhir:value "100000095693" ];
+           fhir:Coding.display [ fhir:value "clotrimazole G01AF02" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.name [
+         fhir:index 0;
+         fhir:MedicinalProductDefinition.name.productName [ fhir:value "Canifug Cremolum, 100 mg + 10mg/g, vaginaalsuposiidid + kreem" ];
+         fhir:MedicinalProductDefinition.name.namePart [
+           fhir:index 0;
+           fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "Canifug Cremolum" ];
+           fhir:MedicinalProductDefinition.name.namePart.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+               fhir:Coding.code [ fhir:value "220000000002" ];
+               fhir:Coding.display [ fhir:value "Invented name part" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "100 mg + 10mg/g" ];
+           fhir:MedicinalProductDefinition.name.namePart.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+               fhir:Coding.code [ fhir:value "220000000004" ];
+               fhir:Coding.display [ fhir:value "Strength part" ]
+             ]
+           ]
+         ], [
+           fhir:index 2;
+           fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "vaginaalsuposiidid + kreem" ];
+           fhir:MedicinalProductDefinition.name.namePart.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+               fhir:Coding.code [ fhir:value "220000000005" ];
+               fhir:Coding.display [ fhir:value "Pharmaceutical dose form part" ]
+             ]
+           ]
+         ];
+         fhir:MedicinalProductDefinition.name.countryLanguage [
+           fhir:index 0;
+           fhir:MedicinalProductDefinition.name.countryLanguage.country [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+               fhir:Coding.code [ fhir:value "100000000388" ];
+               fhir:Coding.display [ fhir:value "Estonia" ]
+             ]
+           ];
+           fhir:MedicinalProductDefinition.name.countryLanguage.language [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072057" ];
+               fhir:Coding.code [ fhir:value "100000072172" ];
+               fhir:Coding.display [ fhir:value "Estonian" ]
+             ]
+           ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.package [
+         fhir:index 0;
+         fhir:MedicinalProductDefinition.package.package [
+           fhir:link <http://example.org/unicom/ppl/PackagedProductDefinition/CanifugCremolum-EE-Package001>;
+           fhir:Reference.reference [ fhir:value "PackagedProductDefinition/CanifugCremolum-EE-Package001" ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MedicinalProductDefinition/CanifugCremolum-EE" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.resource [
+       a fhir:PackagedProductDefinition;
+       fhir:Resource.id [ fhir:value "CanifugCremolum-EE-Package001" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "5" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.337+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EE-100004795-00002222-001</p><p><b>description</b>: Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi.</p><blockquote><p><b>package</b></p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>package</b></p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 100000073559}\">Strip</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003200}\">Aluminium</span>, <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003214}\">PolyEthylene</span></p></blockquote><blockquote><p><b>package</b></p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p></blockquote></blockquote></div>"
+       ];
+       fhir:PackagedProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/pcid" ];
+         fhir:Identifier.value [ fhir:value "EE-100004795-00002222-001" ]
+       ];
+       fhir:PackagedProductDefinition.description [ fhir:value "Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi." ];
+       fhir:PackagedProductDefinition.package [
+         fhir:PackagedProductDefinition.package.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+             fhir:Coding.code [ fhir:value "100000073498" ];
+             fhir:Coding.display [ fhir:value "Box" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+         fhir:PackagedProductDefinition.package.material [
+           fhir:index 0;
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+             fhir:Coding.code [ fhir:value "200000003529" ];
+             fhir:Coding.display [ fhir:value "Cardboard" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.package.package [
+           fhir:index 0;
+           fhir:PackagedProductDefinition.package.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+               fhir:Coding.code [ fhir:value "100000073559" ];
+               fhir:Coding.display [ fhir:value "Strip" ]
+             ]
+           ];
+           fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+           fhir:PackagedProductDefinition.package.material [
+             fhir:index 0;
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+               fhir:Coding.code [ fhir:value "200000003200" ];
+               fhir:Coding.display [ fhir:value "Aluminium" ]
+             ]
+           ], [
+             fhir:index 1;
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+               fhir:Coding.code [ fhir:value "200000003214" ];
+               fhir:Coding.display [ fhir:value "PolyEthylene" ]
+             ]
+           ];
+           fhir:PackagedProductDefinition.package.containedItem [
+             fhir:index 0;
+             fhir:PackagedProductDefinition.package.containedItem.item [
+               fhir:index 0;
+               fhir:CodeableReference.reference [
+                 fhir:link <http://example.org/unicom/ppl/ManufacturedItemDefinition/CanifugCremolum-EE-ManItem002>;
+                 fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/CanifugCremolum-EE-ManItem002" ]
+               ]
+             ];
+             fhir:PackagedProductDefinition.package.containedItem.amountInteger [ fhir:value "6"^^xsd:integer ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:PackagedProductDefinition.package.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+               fhir:Coding.code [ fhir:value "100000073498" ];
+               fhir:Coding.display [ fhir:value "Box" ]
+             ]
+           ];
+           fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+           fhir:PackagedProductDefinition.package.material [
+             fhir:index 0;
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+               fhir:Coding.code [ fhir:value "200000003529" ];
+               fhir:Coding.display [ fhir:value "Cardboard" ]
+             ]
+           ];
+           fhir:PackagedProductDefinition.package.package [
+             fhir:index 0;
+             fhir:PackagedProductDefinition.package.type [
+               fhir:CodeableConcept.coding [
+                 fhir:index 0;
+                 fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+                 fhir:Coding.code [ fhir:value "100000073561" ];
+                 fhir:Coding.display [ fhir:value "Tube" ]
+               ]
+             ];
+             fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+             fhir:PackagedProductDefinition.package.material [
+               fhir:index 0;
+               fhir:CodeableConcept.coding [
+                 fhir:index 0;
+                 fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+                 fhir:Coding.code [ fhir:value "200000003200" ];
+                 fhir:Coding.display [ fhir:value "Aluminium" ]
+               ]
+             ];
+             fhir:PackagedProductDefinition.package.containedItem [
+               fhir:index 0;
+               fhir:PackagedProductDefinition.package.containedItem.item [
+                 fhir:index 0;
+                 fhir:CodeableReference.reference [
+                   fhir:link <http://example.org/unicom/ppl/ManufacturedItemDefinition/CanifugCremolum-EE-ManItem001>;
+                   fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/CanifugCremolum-EE-ManItem001" ]
+                 ]
+               ];
+               fhir:PackagedProductDefinition.package.containedItem.amountQuantity [
+                 fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ];
+                 fhir:Quantity.unit [ fhir:value "gram(s)" ];
+                 fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+                 fhir:Quantity.code [ fhir:value "100000110654" ]
+               ]
+             ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PackagedProductDefinition/CanifugCremolum-EE-Package001" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.resource [
+       a fhir:RegulatedAuthorization;
+       fhir:Resource.id [ fhir:value "CanifugCremolum-EE-MarketingAuthorisation" ];
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "12" ];
+         fhir:Meta.lastUpdated [ fhir:value "2021-11-22T21:51:01.375+00:00"^^xsd:dateTime ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 366201</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_CanifugCremolum-EE\">See above (MedicinalProductDefinition/CanifugCremolum-EE)</a></p><p><b>type</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Estonia</span></p><p><b>status</b>: <span title=\"Codes: {https://spor.ema.europa.eu/v1/lists/100000072049 200000017708}\">Valid - Renewed/Varied</span></p><p><b>statusDate</b>: 2017-12-06</p><p><b>holder</b>: <span>Dr. August Wolff GmbH and Co. KG Arzneimittel</span></p></div>"
+       ];
+       fhir:RegulatedAuthorization.identifier [
+         fhir:index 0;
+         fhir:Identifier.system [ fhir:value "http://ema.europa.eu/fhir/marketingAuthorizationNumber" ];
+         fhir:Identifier.value [ fhir:value "366201" ]
+       ];
+       fhir:RegulatedAuthorization.subject [
+         fhir:link <http://example.org/unicom/ppl/MedicinalProductDefinition/CanifugCremolum-EE>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/CanifugCremolum-EE" ]
+       ];
+       fhir:RegulatedAuthorization.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000060" ];
+           fhir:Coding.code [ fhir:value "220000000061" ];
+           fhir:Coding.display [ fhir:value "Marketing Authorisation" ]
+         ]
+       ];
+       fhir:RegulatedAuthorization.region [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+           fhir:Coding.code [ fhir:value "100000000388" ];
+           fhir:Coding.display [ fhir:value "Estonia" ]
+         ]
+       ];
+       fhir:RegulatedAuthorization.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072049" ];
+           fhir:Coding.code [ fhir:value "200000017708" ];
+           fhir:Coding.display [ fhir:value "Valid - Renewed/Varied" ]
+         ]
+       ];
+       fhir:RegulatedAuthorization.statusDate [ fhir:value "2017-12-06"^^xsd:date ];
+       fhir:RegulatedAuthorization.holder [
+         fhir:Reference.identifier [
+           fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/v1/locations" ];
+           fhir:Identifier.value [ fhir:value "LOC-100004795" ]
+         ];
+         fhir:Reference.display [ fhir:value "Dr. August Wolff GmbH and Co. KG Arzneimittel" ]
+       ]
+     ];
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "RegulatedAuthorization/CanifugCremolum-EE-MarketingAuthorisation" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/unicom/ppl/Bundle/CanifugCremolum-EE-Bundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

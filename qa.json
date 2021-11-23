@@ -3,10 +3,10 @@
   "name": "IDMP_IG",
   "package-id": "fhir.example.unicom.ppl",
   "ig-ver": "0.1.0",
-  "date": "Thu, 18 Nov, 2021 20:18:37 +0000",
-  "errs": 13,
-  "warnings": 6,
-  "hints": 86,
+  "date": "Mon, 22 Nov, 2021 22:19:15 +0000",
+  "errs": 31,
+  "warnings": 7,
+  "hints": 128,
   "version": "4.6.0",
   "tool": "4.6.0 (3)"
 }

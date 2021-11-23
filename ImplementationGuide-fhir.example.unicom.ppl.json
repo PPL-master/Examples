@@ -10,7 +10,7 @@
   "name": "IDMP_IG",
   "title": "PPL Examples",
   "status": "draft",
-  "date": "2021-11-18T20:18:37+00:00",
+  "date": "2021-11-22T22:19:15+00:00",
   "publisher": "Unicom Project",
   "contact": [
     {
@@ -56,6 +56,19 @@
         "name": "10e18b90-c5ff-4921-acae-db0a9f85cc79",
         "exampleBoolean": true,
         "groupingId": "GroupA"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/CanifugCremolum-EE-Bundle"
+        },
+        "name": "CanifugCremolum-EE-Bundle",
+        "exampleBoolean": true
       },
       {
         "extension": [
