@@ -10,7 +10,7 @@
   "name": "IDMP_IG",
   "title": "PPL Examples",
   "status": "draft",
-  "date": "2021-11-22T22:19:15+00:00",
+  "date": "2021-11-23T13:10:35+00:00",
   "publisher": "Unicom Project",
   "contact": [
     {
@@ -34,12 +34,17 @@
       {
         "id": "GroupA",
         "name": "Betaklav",
-        "description": "Estaonian example. A bundle containing all the Betaklav resources."
+        "description": "Estonian example. A bundle containing all the Betaklav resources."
       },
       {
         "id": "GroupB",
         "name": "Cefuroxime",
         "description": "Cefuroxime as specified in Estonia"
+      },
+      {
+        "id": "Group C",
+        "name": "CanifugCremolum EE",
+        "description": "Canestan Combi in its Estonian form.  This has been built as a transaction so all resources are independant, but are managed as a single transaction - if one part fails it all fails."
       }
     ],
     "resource": [
@@ -68,7 +73,8 @@
           "reference": "Bundle/CanifugCremolum-EE-Bundle"
         },
         "name": "CanifugCremolum-EE-Bundle",
-        "exampleBoolean": true
+        "exampleBoolean": true,
+        "groupingId": "Group C"
       },
       {
         "extension": [

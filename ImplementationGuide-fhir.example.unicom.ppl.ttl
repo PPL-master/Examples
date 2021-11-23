@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IDMP_IG"];
   fhir:ImplementationGuide.title [ fhir:value "PPL Examples"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-22T22:19:15+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-23T13:10:35+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Unicom Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -40,12 +40,17 @@
        fhir:index 0;
        fhir:Element.id [ fhir:value "GroupA" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Betaklav" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Estaonian example. A bundle containing all the Betaklav resources." ]
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Estonian example. A bundle containing all the Betaklav resources." ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "GroupB" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Cefuroxime" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Cefuroxime as specified in Estonia" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "Group C" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "CanifugCremolum EE" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Canestan Combi in its Estonian form.  This has been built as a transaction so all resources are independant, but are managed as a single transaction - if one part fails it all fails." ]
      ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
@@ -73,7 +78,8 @@
          fhir:Reference.reference [ fhir:value "Bundle/CanifugCremolum-EE-Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-EE-Bundle" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
