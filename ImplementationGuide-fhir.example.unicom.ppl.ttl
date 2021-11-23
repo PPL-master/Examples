@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IDMP_IG"];
   fhir:ImplementationGuide.title [ fhir:value "PPL Examples"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-23T13:10:35+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-23T13:44:54+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Unicom Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
