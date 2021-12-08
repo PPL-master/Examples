@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IDMP_IG"];
   fhir:ImplementationGuide.title [ fhir:value "PPL Examples"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-23T13:44:54+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-08T18:46:13+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Unicom Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -38,19 +38,22 @@
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.grouping [
        fhir:index 0;
-       fhir:Element.id [ fhir:value "GroupA" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Betaklav" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Estonian example. A bundle containing all the Betaklav resources." ]
+       fhir:Element.id [ fhir:value "Group A" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Betaklav (Estonia)" ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "GroupB" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Cefuroxime" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Cefuroxime as specified in Estonia" ]
+       fhir:Element.id [ fhir:value "Group B" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Betaklav (Sweden)" ]
      ], [
        fhir:index 2;
        fhir:Element.id [ fhir:value "Group C" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Cefuroxime" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Cefuroxime as specified in Estonia.  This does not use a Bundle." ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "Group D" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "CanifugCremolum EE" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Canestan Combi in its Estonian form.  This has been built as a transaction so all resources are independant, but are managed as a single transaction - if one part fails it all fails." ]
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Canestan Combi in its Estonian form.  This has been built as a Transaction Bundle so all resources are independant, but are managed as a single transaction - if one part fails it all fails." ]
      ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
@@ -64,10 +67,26 @@
          fhir:Reference.reference [ fhir:value "Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "10e18b90-c5ff-4921-acae-db0a9f85cc79" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Estonian example. A bundle containing all the Betaklav resources.  These only exist as the bundle." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "GroupA" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group A" ]
      ], [
        fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/unicom/ppl/Bundle/20131217000072>;
+         fhir:Reference.reference [ fhir:value "Bundle/20131217000072" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "20131217000072" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Swedish example. A bundle containing all the Betaklav resources loaded as individual resources." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group B" ]
+     ], [
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -79,9 +98,9 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-EE-Bundle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group D" ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -93,9 +112,9 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "GroupB" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -107,9 +126,9 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE-ManItem001" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "GroupB" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -121,9 +140,9 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE-MarketingAuthorisation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "GroupB" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -136,9 +155,9 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CefuroximeMIP1500MG-EE-Package001" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "II tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "GroupB" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -150,9 +169,9 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "cefuroxime-1500mg-Ingredient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "GroupB" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -164,7 +183,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "cefuroxime-1500mg-solution-vial" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "GroupB" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Group C" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

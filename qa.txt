@@ -1,13 +1,14 @@
 ﻿IDMP_IG : Validation Results
 =========================================
 
-err = 33, warn = 7, info = 128
-IG Publisher Version: 1.1.81 Out of date - current version is 1.1.89
-Generated Tue Nov 23 13:45:19 GMT 2021. FHIR version 4.6.0 for fhir.example.unicom.ppl#0.1.0 (canonical = http://example.org/unicom/ppl)
- Build Errors : 1 / 7 / 0
- C:\Filing\Unicom\FSH\fsh-generated\resources\ImplementationGuide-fhir.example.unicom.ppl : 3 / 0 / 1
+err = 78, warn = 6, info = 175
+IG Publisher Version: 1.1.81 Out of date - current version is 1.1.90
+Generated Wed Dec 08 18:46:38 GMT 2021. FHIR version 4.6.0 for fhir.example.unicom.ppl#0.1.0 (canonical = http://example.org/unicom/ppl)
+ Build Errors : 1 / 6 / 0
+ C:\Filing\Unicom\FSH\fsh-generated\resources\ImplementationGuide-fhir.example.unicom.ppl : 14 / 0 / 1
  C:\Filing\Unicom\FSH\fsh-generated\resources\administrableproductdefinition-cefuroxime-1500mg-solution-vial : 0 / 0 / 5
  C:\Filing\Unicom\FSH\fsh-generated\resources\bundle-10e18b90-c5ff-4921-acae-db0a9f85cc79 : 10 / 0 / 69
+ C:\Filing\Unicom\FSH\fsh-generated\resources\bundle-20131217000072 : 34 / 0 / 56
  C:\Filing\Unicom\FSH\fsh-generated\resources\bundle-CanifugCremolum-EE-Bundle : 18 / 0 / 52
  C:\Filing\Unicom\FSH\fsh-generated\resources\ingredient-cefuroxime-1500mg-Ingredient : 0 / 0 / 6
  C:\Filing\Unicom\FSH\fsh-generated\resources\manufactureditemdefinition-CefuroximeMIP1500MG-EE-ManItem001 : 0 / 0 / 3
@@ -16,7 +17,6 @@ Generated Tue Nov 23 13:45:19 GMT 2021. FHIR version 4.6.0 for fhir.example.unic
  C:\Filing\Unicom\FSH\fsh-generated\resources\regulatedauthorization-CefuroximeMIP1500MG-EE-MarketingAuthorisation : 0 / 0 / 4
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/CanifugCremolum-EE-Bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicinalProductDefinition/CefuroximeMIP1500MG-EE.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ManufacturedItemDefinition/CefuroximeMIP1500MG-EE-ManItem001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -26,8 +26,19 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: C:\Filing\Unicom\FSH\output\MedicinalProductDefinition-CefuroximeMIP1500MG-EE.html#/html/body/div/div/div/div/div/div/div/blockquote/p/a at Line 162, column 2075: The link 'CefuroximeMIP1500MG-EE-Package002' for "CefuroximeMIP1500MG-EE-Package002" cannot be resolved
 == fsh-generated\resources\ImplementationGuide-fhir.example.unicom.ppl.json ==
 ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.fhirVersion[0]: The value provided ('4.6.0') is not in the value set http://hl7.org/fhir/ValueSet/FHIR-version|4.5.0 (http://hl7.org/fhir/ValueSet/FHIR-version), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/FHIR-version#4.6.0 in http://hl7.org/fhir/FHIR-version)
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.grouping[0].id: id value 'Group A' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.grouping[1].id: id value 'Group B' is not valid
 ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.grouping[2].id: id value 'Group C' is not valid
-ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[1].groupingId: id value 'Group C' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.grouping[3].id: id value 'Group D' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[0].groupingId: id value 'Group A' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[1].groupingId: id value 'Group B' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[2].groupingId: id value 'Group D' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[3].groupingId: id value 'Group C' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[4].groupingId: id value 'Group C' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[5].groupingId: id value 'Group C' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[6].groupingId: id value 'Group C' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[7].groupingId: id value 'Group C' is not valid
+ERROR: ImplementationGuide/fhir.example.unicom.ppl: ImplementationGuide.definition.resource[8].groupingId: id value 'Group C' is not valid
 == fsh-generated\resources\AdministrableProductDefinition-cefuroxime-1500mg-solution-vial.json ==
 INFORMATION: AdministrableProductDefinition/cefuroxime-1500mg-solution-vial: AdministrableProductDefinition.administrableDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
 INFORMATION: AdministrableProductDefinition/cefuroxime-1500mg-solution-vial: AdministrableProductDefinition.unitOfPresentation.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
@@ -103,6 +114,88 @@ INFORMATION: Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79: Bundle.entry[8].resour
 INFORMATION: Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79: Bundle.entry[8].resource.ofType(AdministrableProductDefinition).ingredient[0]: Details for urn:uuid:70394f07-02cb-4f04-8b2e-b6ac725da813 matching against Profile http://hl7.org/fhir/StructureDefinition/Ingredient
 INFORMATION: Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79: Bundle.entry[8].resource.ofType(AdministrableProductDefinition).ingredient[1]: Details for urn:uuid:97f73ce4-094b-45eb-bec9-e4ab3ff338a8 matching against Profile http://hl7.org/fhir/StructureDefinition/Ingredient
 INFORMATION: Bundle/10e18b90-c5ff-4921-acae-db0a9f85cc79: Bundle.entry[8].resource.ofType(AdministrableProductDefinition).routeOfAdministration[0].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated
+== fsh-generated\resources\Bundle-20131217000072.json ==
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).language: The value provided ('EN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7F1F8 in module 'FHIRServer.exe'. Read of address 0000000000000028)
+ERROR: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).extension[0]: The extension http://ema.europa.eu/fhir/extension/authorisedDoseForm is unknown, and not allowed here
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).extension[0].value.ofType(Coding): Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).domain.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000004' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).legalStatusOfSupply.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072051' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).classification[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000093533' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].namePart[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].namePart[1].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].namePart[2].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000000' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].language.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072057' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[0].package: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[0].resource.ofType(MedicinalProductDefinition).package[1].package: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[1]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[1].resource.ofType(RegulatedAuthorization).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[1].resource.ofType(RegulatedAuthorization).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/220000000060' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[1].resource.ofType(RegulatedAuthorization).region[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[1].resource.ofType(RegulatedAuthorization).status.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072049' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[1].resource.ofType(RegulatedAuthorization).relatedDate[0].type.coding[0]: Code System URI 'http://ema.europa.eu/fhir/authorisationDateType' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).language: The value provided ('EN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7F1F8 in module 'FHIRServer.exe'. Read of address 0000000000000028)
+ERROR: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')
+ERROR: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here
+ERROR: Bundle/20131217000072: Bundle.entry[2]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).subject[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).marketingStatus[0].country.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).marketingStatus[0].status.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072052' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).marketingAuthorization: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.package[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.package[0].material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[2].resource.ofType(PackagedProductDefinition).package.package[0].containedItem[0].item[0].reference: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[3].resource.ofType(ManufacturedItemDefinition).extension[0]: The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here
+ERROR: Bundle/20131217000072: Bundle.entry[3]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[3].resource.ofType(ManufacturedItemDefinition).extension[0].value.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[3].resource.ofType(ManufacturedItemDefinition).manufacturedDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[3].resource.ofType(ManufacturedItemDefinition).unitOfPresentation.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[3].resource.ofType(ManufacturedItemDefinition).ingredient[0].reference: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[3].resource.ofType(ManufacturedItemDefinition).ingredient[1].reference: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[3].resource.ofType(ManufacturedItemDefinition).ingredient[1].reference: Unable to resolve resource 'Inggredient/231a6723-8958-4ea9-adbc-53708a41d62c'
+ERROR: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).extension[0]: The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here
+ERROR: Bundle/20131217000072: Bundle.entry[4]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).extension[0].value.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).numerator: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).denominator: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].substance.concept.coding[0]: Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).numerator: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[4].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).denominator: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).extension[0]: The extension http://ema.europa.eu/fhir/extension/subject is unknown, and not allowed here
+ERROR: Bundle/20131217000072: Bundle.entry[5]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).extension[0].value.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072050' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).numerator: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).substance.strength[0].presentation.ofType(Ratio).denominator: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].substance.concept.coding[0]: Code System URI 'https://spor.ema.europa.eu/v2/SubstanceDefinition' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).numerator: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000110633' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[5].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].strength.ofType(Ratio).denominator: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).language: The value provided ('EN') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Access violation at address 0000000000E7F1F8 in module 'FHIRServer.exe'. Read of address 0000000000000028)
+ERROR: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity']: Extension url 'http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity' is not valid (invalid Element id 'PackagedProductDefinition.containedItemQuantity')
+ERROR: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).extension[0]: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity is unknown, and not allowed here
+ERROR: Bundle/20131217000072: Bundle.entry[6]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).subject[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).marketingStatus[0].country.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000000002' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).marketingStatus[0].status.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000072052' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).marketingAuthorization: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.package[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073346' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.package[0].material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000003199' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.package[0].containedItem[0].item[0].reference: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[7]: Bundle entry missing fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).subject[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).administrableDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
+INFORMATION: Bundle/20131217000072: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).unitOfPresentation.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000014' is unknown so the code cannot be validated
+ERROR: Bundle/20131217000072: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).ingredient[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/20131217000072: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).ingredient[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/20131217000072: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).routeOfAdministration[0].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated
 == fsh-generated\resources\Bundle-CanifugCremolum-EE-Bundle.json ==
 ERROR: Bundle/CanifugCremolum-EE-Bundle: Bundle.entry[0]: Bundle entry missing fullUrl
 ERROR: Bundle/CanifugCremolum-EE-Bundle: Bundle.entry[0].resource.ofType(AdministrableProductDefinition).subject[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
